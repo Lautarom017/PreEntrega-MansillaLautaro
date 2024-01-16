@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweetCake Shop - Productos</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../img/favicon_icono_sc_png.png" type="image/x-icon">
+    <!-- css BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- link css -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg menu sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+                <img src="../img/Logo-SC.webp" alt="logo de SweetCake">
+          </a>
+            <!-- btn hamburguer -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/promociones.html">Promociones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- ends nav -->
+    <main class="store">
+        <div class="actions">
+            <form action="">
+                <input type="text" placeholder="buscar">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                </button>
+                <!-- ends btn search -->
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                    </svg>
+                </button>
+                <!-- ends btn cart -->
+            </form>
+        </div>
+        <!-- ends actions -->
+        <section class="filters">
+            <form>
+                <select name="categorias">
+                    <option>Categorias</option>
+                    <option value="tortas">Tortas</option>
+                    <option value="moldes">Moldes</option>
+                    <option value="postres">Postres</option>
+                    <option value="accesorios">Accesorios</option>
+                </select>
+                <span><b>ACCESORIOS</b></span>
+                <ul>
+                    <li>
+                        <a href="#">ESPATULAS DE GOMA (4)</a>
+                    </li>
+                    <li>
+                        <a href="#">ESPATULAS DE PLASTICO (6)</a>
+                    </li>
+                    <li>
+                        <a href="#">CORTES DE ACERO INOXIDABLE (2)</a>
+                    </li>
+                    <li>
+                        <a href="#">CORTES DE PLASTICO (5)</a>
+                    </li>
+                    <li>
+                        <a href="#">MEDIDORES (10)</a>
+                    </li>
+                    <li>
+                        <a href="#">PALO DE AMASAR DE MADERA (4)</a>
+                    </li>
+                    <li>
+                        <a href="#">PALO DE AMASAR DE ACERO INOXIDABLE (2)</a>
+                    </li>
+                    <li>
+                        <a href="#">MANGA DESCARTABLE (20)</a>
+                    </li>
+                    <li>
+                        <a href="#">PICOS PARA MANGA (5)</a>
+                    </li>
+                    <li>
+                        <a href="#">BATIDORES (7)</a>
+                    </li>
+                </ul>
+                <!-- ends accesorios -->
+                <span><b>COLORES</b></span>
+                <div>
+                    <label for="pink">ROSA</label>
+                    <input type="checkbox" id="pink">
+                </div>
+                <div>
+                    <label for="skyblue">CELESTE</label>
+                    <input type="checkbox" id="skyblue">
+                </div>
+                <!-- ends checkboxs -->
+            </form>
+        </section>
+        <!-- ends filters -->
+        <section class="prod1">
+            <!-- <p>1</p> -->
+            <img src="../img/productos/tiramisu_webp.webp" alt="bloque rectangular de postre tiramisú espolvoreado con canela">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure nemo eos veritatis quae reiciendis fugiat incidunt expedita. Accusantium harum eveniet qui, sed consectetur facilis totam, minus porro laudantium maiores dicta.</p>
+        </section>
+        <section class="prod2">
+            <img src="../img/productos/cheesecake_webp.webp" alt="bloque rectangular de postre tiramisú espolvoreado con canela">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure nemo eos veritatis quae reiciendis fugiat incidunt expedita. Accusantium harum eveniet qui, sed consectetur facilis totam, minus porro laudantium maiores dicta.</p>
+        </section>
+        <section class="prod3">
+            <img src="../img/productos/torta-cumple_webp.webp" alt="bloque rectangular de postre tiramisú espolvoreado con canela">
+        </section>
+        <section class="prod4">
+            <img src="../img/productos/tarta-frutilla_webp.webp" alt="bloque rectangular de postre tiramisú espolvoreado con canela">
+        </section>
+    </main>
+    <footer class="footer">
+        <!-- starts social icons -->
+        <div>
+            <a href="https://facebook.com" target="_blank">
+                <img src="../img/iconos/favicon_icono_fb_png.png" alt="Seguinos en Facebook">
+            </a>
+            <a href="http://instagram.com" target="_blank">
+                <img src="../img/iconos/favicon_logo_ig_PNG.png" alt="Seguinos en Instagram">
+            </a>
+            <a href="">
+                <img src="../img/iconos/favicon_logo_wsp_png.PNG" alt="Contactate con nosotros por WhatsApp">
+            </a>
+        </div>
+            <a href="index.html">
+                <ul>
+                    <a href="#"><li>Términos y condiciones</li></a>
+                    <a href="#"><li>Soporte Técnico</li></a>
+                    <a href="#"><li>Mansilla Lautaro WEB 2023</li></a>
+                </ul>
+            </a>
+            <!-- ends social icons -->
+    </footer>
+    <!-- ends footer -->
+    <!-- js de BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
