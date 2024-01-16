@@ -58,7 +58,12 @@ h1,h2,h3,a{
 .text-italic{
     font-style: italic;
 }
-
+.bg-grey{
+    background-color: grey;
+}
+.bg-choco{
+    background-color: chocolate;
+}
 .card .bg-orange{
     background-color: orange;
     color: white;
@@ -345,5 +350,12 @@ header img{
 
 .card h2{
     color: chocolate;
+}
 
+.muestra-trabajo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    margin: 10px;
 }
