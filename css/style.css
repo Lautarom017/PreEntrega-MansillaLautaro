@@ -288,7 +288,8 @@ header img{
     }
     .store .section{
         border-radius: 10px;
-    }
+    } 
+    
 
 /* starts responsive */
 @media (width < 1024px){

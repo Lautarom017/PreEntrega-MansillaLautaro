@@ -1,0 +1,23 @@
+// nav - nesting
+.menu{
+    background-color: $mainColor;
+    padding: 0px 20px;
+    border-bottom: solid 1px $black;
+    img{
+        width: 200px;
+        ul li{
+            list-style: none;
+            margin-right: 15px;
+            a{
+                text-decoration: none;
+                color: $secondaryColor;
+                font-size: 24px;
+                // hover
+                &:hover{
+                    text-decoration: underline;
+                    color: $black;
+                }
+            }
+        }
+    }
+}
