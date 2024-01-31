@@ -12,10 +12,16 @@
                 color: $fourthColor;
                 text-decoration: none;
                 font-size: 24px;
+                background-image: linear-gradient(currentColor, currentColor);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .3s;
                 // hover
                 &:hover{
                     text-decoration: underline;
                     color: $black;
+                    background-size: 100% 2px;
                 }
             }
         }

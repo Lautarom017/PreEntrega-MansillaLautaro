@@ -84,12 +84,21 @@ header img{
 .bg-choco{
     background-color: $fourthColor;
 }
-.card .bg-orange{
-    background-color: $secondaryColor;
-    color: $white;
-    &:hover{
-        background-color: $fifthColor;
-        color: $black;
+.card{
+    h2{
+        color: $secondaryColor;
+        font-size: $bold;
+    }
+    p{
+        color: $thirdColor;
+    }
+    .bg-orange{
+        background-color: $secondaryColor;
+        color: $white;
+        &:hover{
+            background-color: $fifthColor;
+            color: $black;
+        }
     }
 }
 .btn-send{

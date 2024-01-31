@@ -1,18 +1,392 @@
-/* Error: expected ")".
- *    ,
- * 18 |     'dos':#25363e
- *    |          ^
- *    '
- *   scss\_mixins.scss 18:10  @import
- *   scss\main.scss 3:9       root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: expected \")\".\a    \2577 \a 18 \2502      'dos':#25363e\d\a    \2502           ^\a    \2575 \a   scss\\_mixins.scss 18:10  @import\a   scss\\main.scss 3:9       root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+* {
+  font-family: "Nunito", sans-serif;
+  box-sizing: border-box;
 }
+
+h1,
+h2,
+h3 {
+  font-family: "Nunito", sans-serif;
+  color: orange;
+  font-weight: 600;
+}
+
+p {
+  color: grey;
+  line-height: 1.4em;
+  font-size: 1em;
+}
+
+header img {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.footer {
+  background-color: rgba(233, 204, 157, 0.795);
+  width: auto;
+  border-top: solid 1px rgb(7, 7, 7);
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+.footer a {
+  color: chocolate;
+  list-style: none;
+  text-decoration: none;
+}
+.footer img {
+  width: 50px;
+  padding: 15px 5px;
+}
+
+.container {
+  background-color: rgba(233, 204, 157, 0.795);
+  width: 90%;
+  height: auto;
+  margin: 50px auto;
+  padding: 20px 15px;
+}
+
+.contact {
+  background-color: rgba(233, 204, 157, 0.795);
+  margin: 20px auto;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+.text-roboto {
+  font-style: "Roboto", sans-serif;
+}
+
+.bg-grey {
+  background-color: grey;
+}
+
+.bg-choco {
+  background-color: chocolate;
+}
+
+.card h2 {
+  color: orange;
+  font-size: 600;
+}
+.card p {
+  color: grey;
+}
+.card .bg-orange {
+  background-color: orange;
+  color: rgb(247, 247, 247);
+}
+.card .bg-orange:hover {
+  background-color: khaki;
+  color: rgb(7, 7, 7);
+}
+
+.btn-send {
+  background-color: chocolate;
+  color: rgb(247, 247, 247);
+  margin-bottom: 5px;
+}
+.btn-send:hover {
+  background-color: khaki;
+  color: rgb(7, 7, 7);
+}
+
+.btn-send {
+  background-color: chocolate;
+  color: rgb(247, 247, 247);
+  margin-bottom: 5px;
+}
+
+.btn-send:hover {
+  background-color: khaki;
+  color: rgb(7, 7, 7);
+}
+
+.menu {
+  background-color: rgba(233, 204, 157, 0.795);
+  padding: 0px 20px;
+  border-bottom: solid 1px rgb(7, 7, 7);
+}
+.menu img {
+  width: 200px;
+}
+.menu img li {
+  list-style: none;
+  margin-right: 15px;
+}
+.menu img li a {
+  color: chocolate;
+  text-decoration: none;
+  font-size: 24px;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+.menu img li a:hover {
+  text-decoration: underline;
+  color: rgb(7, 7, 7);
+  background-size: 100% 2px;
+}
+
+.productos-destacados {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 10px 50px;
+}
+.productos-destacados img {
+  width: 100%;
+}
+.productos-destacados figcaption {
+  color: orange;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.productos-destacados figure {
+  border: 3px solid grey;
+  border-radius: 10px;
+  width: 33%;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+.productos-destacados figure a {
+  background-color: chocolate;
+  color: rgb(247, 247, 247);
+  padding: 4px 20px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  margin: auto;
+}
+.productos-destacados figure p {
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-bottom: 32px;
+}
+
+/* TIENDA */
+.store {
+  display: grid;
+  grid-template-columns: 20% repeat(2, 1fr);
+  grid-template-rows: 80px repeat(3, 300px);
+  grid-template-areas: "actions actions actions" "filters prod1 prod1" "filters prod2 prod3" "filters prod2 prod4";
+  gap: 5px;
+}
+.store .actions {
+  padding: 0 30px;
+  grid-area: actions;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.store .actions button {
+  margin-left: 10px;
+  background-color: orange;
+  color: rgb(247, 247, 247);
+  padding: 6px;
+  border: none;
+  border-radius: 3px;
+}
+.store .actions input {
+  padding: 6px;
+  border-radius: 3px;
+  border: none;
+  background-color: rgb(247, 247, 247);
+}
+.store .filters {
+  padding: 0 20px 30px 30px;
+  grid-area: filters;
+}
+.store .filters a {
+  color: grey;
+  font-size: 1em;
+  text-decoration: none;
+  margin-bottom: 4px;
+  text-transform: lowercase;
+}
+.store .filters a:hover {
+  color: orange;
+}
+.store .filters span {
+  display: block;
+  color: rgb(7, 7, 7);
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+.store .filters select {
+  color: orange;
+  border: none;
+  background-color: rgb(247, 247, 247);
+  margin-bottom: 10px;
+  font-size: 1.4em;
+}
+.store .filters li {
+  padding-left: 10px;
+  list-style: none;
+}
+.store .prod1 {
+  grid-area: prod1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.store .prod1 img {
+  width: 300px;
+}
+.store .prod1 p {
+  width: 50%;
+  margin-left: 20px;
+}
+.store .prod2 {
+  grid-area: prod2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.store .prod2 img {
+  width: 300px;
+  margin-bottom: 10px;
+}
+.store .prod2 p {
+  width: 50%;
+  margin-top: 10px;
+}
+.store .prod3 {
+  grid-area: prod3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.store .prod3 img {
+  width: 300px;
+}
+.store .prod4 {
+  grid-area: prod4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.store .prod4 img {
+  width: 300px;
+  margin-bottom: 20px;
+}
+.store .section {
+  border-radius: 10px;
+}
+
+@media (width < 1024px) {
+  /* index */
+  .productos-destacados {
+    flex-direction: row;
+  }
+  .productos-destacados .productos {
+    width: 33%;
+  }
+  /* store */
+  .store {
+    grid-template-columns: 50%;
+    grid-template-rows: auto;
+    grid-template-areas: "actions" "." "prod1" "prod2" "prod3" "prod4";
+  }
+  .store .actions {
+    padding: 0;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .store .actions input {
+    background-color: rgba(233, 204, 157, 0.795);
+  }
+  .store .prod1 {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .store .prod1 p {
+    width: 100%;
+  }
+}
+@media (width < 992px) {
+  .productos-destacados .productos {
+    width: 50%;
+  }
+  /* store */
+  .store {
+    grid-template-columns: 75%;
+    grid-template-rows: auto;
+    grid-template-areas: "actions" "." "prod1" "prod2" "prod3" "prod4";
+  }
+  .store .actions {
+    padding: 0;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .store .actions input {
+    background-color: rgba(233, 204, 157, 0.795);
+  }
+  .store .filters {
+    display: none;
+  }
+  .store .prod1 {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .store .prod1 p {
+    width: 100%;
+  }
+}
+@media (width < 768px) {
+  /* index */
+  .productos-destacados {
+    flex-direction: column;
+  }
+  .productos-destacados .productos {
+    width: 100%;
+  }
+  .store {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "actions" "." "prod1" "prod2" "prod3" "prod4";
+  }
+  .store .actions {
+    padding: 0;
+    width: 99%;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .store .actions input {
+    background-color: rgba(233, 204, 157, 0.795);
+  }
+  .store .filters {
+    display: none;
+  }
+  .store .prod1 {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .store .prod1 p {
+    width: 100%;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
