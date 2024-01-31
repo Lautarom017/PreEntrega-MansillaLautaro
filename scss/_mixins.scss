@@ -1,0 +1,31 @@
+@mixin textos($size,$line,$padding,$color){
+    font-family: $mainFont;
+    font-size: $size;
+    line-height: $line;
+    padding: $padding;
+    color: $color;
+}
+@mixin flex($dire,$justy,$aling,$wrap){
+    display: flex;
+    flex-direction: $dire;
+    justify-content: $justy;
+    align-items: $aling;
+    flex-wrap: $wrap;
+}
+// maps
+$paleta:(
+    'uno':#091B1A
+    'dos':#25363e
+    'tres':#5D4A39
+    'cuatro':#7e5535
+    'cinco':#A96F47
+    'seis':#a2774c
+    'siete':#F27B57
+    'ocho':#FBCE02
+    'nueve':#dcae56
+    'diez':#fbe8bd
+);
+
+
+
+
