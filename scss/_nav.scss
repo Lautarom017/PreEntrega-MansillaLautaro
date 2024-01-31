@@ -9,8 +9,8 @@
             list-style: none;
             margin-right: 15px;
             a{
+                color: $fourthColor;
                 text-decoration: none;
-                color: $secondaryColor;
                 font-size: 24px;
                 // hover
                 &:hover{

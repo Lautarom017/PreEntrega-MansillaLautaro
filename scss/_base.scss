@@ -35,21 +35,31 @@ h3{
     font-weight: $bold;
 }
 p{
-    color: $fourthColor;
+    color: $thirdColor;
     line-height: $lg;
     font-size: $md;
 }
-.text-bold{
-    font-weight: $bold;
+header img{
+    width: 100%;
+    display: block;
+    margin: auto;
 }
-.text-roboto{
-    font-style: $secondFont;
-}
-.bg-grey{
-    background-color: $thirdColor;
-}
-.bg-choco{
-    background-color: $fouthColor;
+.footer{
+    background-color: $mainColor;
+    width: auto;
+    border-top: solid 1px $black;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    a{
+        color: $fourthColor;
+        list-style: none;
+        text-decoration: none;
+    }
+    img{
+        width: 50px;
+        padding: 15px 5px;
+    }
 }
 .container{
     background-color:$mainColor;
@@ -61,6 +71,35 @@ p{
 .contact{
     background-color:$mainColor;
     margin: 20px auto;
+}
+.text-bold{
+    font-weight: $bold;
+}
+.text-roboto{
+    font-style: $secondFont;
+}
+.bg-grey{
+    background-color: $thirdColor;
+}
+.bg-choco{
+    background-color: $fourthColor;
+}
+.card .bg-orange{
+    background-color: $secondaryColor;
+    color: $white;
+    &:hover{
+        background-color: $fifthColor;
+        color: $black;
+    }
+}
+.btn-send{
+    background-color:$fourthColor;
+    color:$white;
+    margin-bottom: 5px;
+    &:hover{
+        background-color:$fifthColor;
+        color:$black;
+    }
 }
 .btn-send{
     background-color:$fourthColor;

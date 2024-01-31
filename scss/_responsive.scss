@@ -1,0 +1,55 @@
+@media (width < 1024px){
+    /* index */
+    .productos-destacados{
+        flex-direction: row;
+        .productos{
+            width: 33%;
+        }
+    }
+    /* store */
+    .store{
+        grid-template-columns: 50%;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "actions"
+        "."
+        "prod1"
+        "prod2"
+        "prod3"
+        "prod4";
+        .actions{
+            padding: 0;
+            width: 100%;
+            margin-top: 20px;
+            justify-content: center;
+            input{
+                background-color: $mainColor;
+            }
+        }
+        .prod1{
+            flex-direction: column;
+            margin-bottom: 10px;    
+            p{
+                width: 100%;
+            }
+        }
+    }
+    
+}
+@media (width < 992px){
+    .productos-destacados{
+        .productos{
+            width: 50%;
+        }
+    }
+
+}
+@media (width < 768px){
+    /* index */
+    .productos-destacados{
+        flex-direction: column;
+        .productos{
+            width: 100%;
+        }
+    }
+}
