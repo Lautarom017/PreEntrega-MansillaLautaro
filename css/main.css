@@ -1,156 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap");
-* {
-  font-family: "Nunito", sans-serif;
-  box-sizing: border-box;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 52 |     background-color: $fouthColor;
+ *    |                       ^^^^^^^^^^^
+ *    '
+ *   scss\_base.scss 52:23  @import
+ *   scss\main.scss 2:9     root stylesheet */
 
-h1,
-h2,
-h3 {
-  font-family: "Nunito", sans-serif;
-  color: orange;
-  font-weight: 600;
-}
-
-p {
-  color: chocolate;
-  line-height: 1.6em;
-  font-size: 1em;
-}
-
-.menu {
-  background-color: rgba(255, 239, 213, 0.795);
-  padding: 0px 20px;
-  border-bottom: solid 1px rgb(7, 7, 7);
-}
-.menu img {
-  width: 200px;
-}
-.menu img ul li {
-  list-style: none;
-  margin-right: 15px;
-}
-.menu img ul li a {
-  text-decoration: none;
-  color: orange;
-  font-size: 24px;
-}
-.menu img ul li a:hover {
-  text-decoration: underline;
-  color: rgb(7, 7, 7);
-}
-
-/* TIENDA */
-.store {
-  display: grid;
-  grid-template-columns: 20% repeat(2, 1fr);
-  grid-template-rows: 80px repeat(3, 300px);
-  grid-template-areas: "actions actions actions" "filters prod1 prod1" "filters prod2 prod3" "filters prod2 prod4";
-  gap: 5px;
-}
-.store .actions {
-  padding: 0 30px;
-  grid-area: actions;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.store .actions button {
-  margin-left: 10px;
-  background-color: orange;
-  color: rgb(247, 247, 247);
-  padding: 6px;
-  border: none;
-  border-radius: 3px;
-}
-.store .actions input {
-  padding: 6px;
-  border-radius: 3px;
-  border: none;
-  background-color: rgb(247, 247, 247);
-}
-.store .filters {
-  padding: 0 20px 30px 30px;
-  grid-area: filters;
-}
-.store .filters a {
-  color: grey;
-  font-size: 1em;
-  text-decoration: none;
-  margin-bottom: 4px;
-  text-transform: lowercase;
-}
-.store .filters a:hover {
-  color: orange;
-}
-.store .filters span {
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
-  color: rgb(7, 7, 7);
-  margin: 10px 0;
-  letter-spacing: 1px;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 52 \2502      background-color: $fouthColor;\d\a    \2502                        ^^^^^^^^^^^\a    \2575 \a   scss\\_base.scss 52:23  @import\a   scss\\main.scss 2:9     root stylesheet";
 }
-.store .filters select {
-  color: orange;
-  border: none;
-  background-color: rgb(247, 247, 247);
-  margin-bottom: 10px;
-  font-size: 1.6em;
-}
-.store .filters li {
-  padding-left: 10px;
-  list-style: none;
-}
-.store .prod1 {
-  grid-area: prod1;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.store .prod1 img {
-  width: 300px;
-}
-.store .prod1 p {
-  width: 50%;
-  margin-left: 20px;
-}
-.store .prod2 {
-  grid-area: prod2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.store .prod2 img {
-  width: 300px;
-  margin-bottom: 10px;
-}
-.store .prod2 p {
-  width: 50%;
-  margin-top: 10px;
-}
-.store .prod3 {
-  grid-area: prod3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.store .prod3 img {
-  width: 300px;
-}
-.store .prod4 {
-  grid-area: prod4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.store .prod4 img {
-  width: 300px;
-  margin-bottom: 20px;
-}
-.store .section {
-  border-radius: 10px;
-}
-
-/*# sourceMappingURL=main.css.map */

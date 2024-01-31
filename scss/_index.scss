@@ -1,0 +1,39 @@
+.productos{
+    border: 3px solid $thirdColor;
+    border-radius: 10px;
+    width: 33%;
+    margin-bottom: 30px;
+    padding: 20px;
+    .destacados{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 10px 50px;
+    }
+    img{
+        width: 100%;
+    }
+    figcaption{
+        color: $secondaryColor;
+        font-size: $md;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+}
+    figure.productos a{
+        background-color: $fourthColor;
+        color: $white;
+        padding: 4px 20px;
+        border-radius: 8px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: block;
+        margin: auto;
+    }
+    figure.productos p{
+        font-size: $md;
+        line-height: $lg;
+        margin-bottom: 32px;
+    }

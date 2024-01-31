@@ -1,29 +1,30 @@
 // fonts
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 // vars
-$mainFont:'Nunito', sans-serif;
-$secondFont:Roboto, sans-serif;
+$mainFont: 'Nunito', sans-serif;
+$secondFont:'Roboto', sans-serif;
 // weights
 $light:300;
 $regular:400;
 $bold:600;
 // colors
-$mainColor:rgba(255, 239, 213, 0.795);
+$mainColor:rgba(233, 204, 157, 0.795);
 $secondaryColor:orange;
 $thirdColor:grey;
 $fourthColor:chocolate;
+$fifthColor:khaki;
 $white:rgb(247, 247, 247);
 $black:rgb(7, 7, 7);
 // sizies
 $sm:0.8em;
 $md:1em;
-$lg:1.6em;
-$xl:2em;
-$xxl:3em;
-
+$lg:1.4em;
+$xl:1.8em;
+$xxl:2.4em;
 // general
 *{
-    font-family:'Nunito', sans-serif;
+    font-family:$mainFont;
     box-sizing:border-box;
 }
 h1,
@@ -37,4 +38,36 @@ p{
     color: $fourthColor;
     line-height: $lg;
     font-size: $md;
+}
+.text-bold{
+    font-weight: $bold;
+}
+.text-roboto{
+    font-style: $secondFont;
+}
+.bg-grey{
+    background-color: $thirdColor;
+}
+.bg-choco{
+    background-color: $fouthColor;
+}
+.container{
+    background-color:$mainColor;
+    width: 90%;
+    height: auto;
+    margin: 50px auto;
+    padding: 20px 15px;
+}
+.contact{
+    background-color:$mainColor;
+    margin: 20px auto;
+}
+.btn-send{
+    background-color:$fourthColor;
+    color:$white;
+    margin-bottom: 5px;
+}
+.btn-send:hover{
+    background-color:$fifthColor;
+    color:$black;
 }
