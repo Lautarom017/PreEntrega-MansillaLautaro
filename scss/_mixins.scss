@@ -12,6 +12,13 @@
     align-items: $aling;
     flex-wrap: $wrap;
 }
+@mixin card($width,$height){
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 16px;
+    width: $width;
+    height: $height;
+}
 // maps
 $paleta:(
     'uno': #091B1A,

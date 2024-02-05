@@ -119,3 +119,14 @@ header img{
     background-color:$fifthColor;
     color:$black;
 }
+.not-found{
+    background-color: $mainColor;
+    font-size: $lg;
+    h1{
+        
+    }
+    img{
+        height: auto;
+        width: 100%;
+    }
+}

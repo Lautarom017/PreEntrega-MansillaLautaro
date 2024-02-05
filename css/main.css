@@ -109,6 +109,15 @@ header img {
   color: rgb(7, 7, 7);
 }
 
+.not-found {
+  background-color: rgba(233, 204, 157, 0.795);
+  font-size: 1.4em;
+}
+.not-found img {
+  height: auto;
+  width: 100%;
+}
+
 .menu {
   background-color: rgba(233, 204, 157, 0.795);
   padding: 0px 20px;
