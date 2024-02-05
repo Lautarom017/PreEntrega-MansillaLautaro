@@ -15,9 +15,15 @@
 @mixin card($width,$height){
     border-radius: 4px;
     padding: 4px;
-    font-size: 16px;
+    font-size: $md;
     width: $width;
     height: $height;
+}
+@mixin boxs($padding,$margin,$bg){
+    display: flex;
+    padding: $padding;
+    margin: $margin;
+    background-color: $mainColor;
 }
 // maps
 $paleta:(

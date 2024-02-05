@@ -70,7 +70,12 @@ header img{
 }
 .contact{
     background-color:$mainColor;
-    margin: 20px auto;
+    margin: 20px 20px;
+}
+.map-card{
+    margin-left: 20px;
+    width: 90%;
+    height: 450px;
 }
 .text-bold{
     font-weight: $bold;
@@ -122,11 +127,13 @@ header img{
 .not-found{
     background-color: $mainColor;
     font-size: $lg;
-    h1{
-        
-    }
     img{
         height: auto;
         width: 100%;
+    }
+    p{
+        font-family: $secondFont;
+        font-size: $md;
+        font-style: $bold;
     }
 }

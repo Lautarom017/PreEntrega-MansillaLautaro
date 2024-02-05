@@ -53,7 +53,13 @@ header img {
 
 .contact {
   background-color: rgba(233, 204, 157, 0.795);
-  margin: 20px auto;
+  margin: 20px 20px;
+}
+
+.map-card {
+  margin-left: 20px;
+  width: 90%;
+  height: 450px;
 }
 
 .text-bold {
@@ -117,6 +123,11 @@ header img {
   height: auto;
   width: 100%;
 }
+.not-found p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-style: 600;
+}
 
 .menu {
   background-color: rgba(233, 204, 157, 0.795);
@@ -156,12 +167,6 @@ header img {
 .productos-destacados img {
   width: 100%;
 }
-.productos-destacados figcaption {
-  color: orange;
-  font-size: 1em;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
 .productos-destacados figure {
   border: 3px solid grey;
   border-radius: 10px;
@@ -184,6 +189,12 @@ header img {
   font-size: 1em;
   line-height: 1.4em;
   margin-bottom: 32px;
+}
+.productos-destacados figcaption {
+  color: orange;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 /* TIENDA */
@@ -299,15 +310,59 @@ header img {
   border-radius: 10px;
 }
 
+.nos-img img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.box-us {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 10px 50px;
+}
+.box-us .card-vid1 {
+  border: 3px solid grey;
+  border-radius: 10px;
+  width: 50%;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+.box-us .card-vid1 iframe {
+  width: 100%;
+  height: 450px;
+}
+.box-us .card-vid1 p {
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-left: 32px;
+}
+.box-us .card-vid2 {
+  border: 3px solid grey;
+  border-radius: 10px;
+  width: 50%;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+.box-us .card-vid2 iframe {
+  width: 100%;
+  height: 450px;
+}
+.box-us .card-vid2 p {
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-left: 32px;
+}
+
 @media (width < 1024px) {
-  /* index */
   .productos-destacados {
     flex-direction: row;
   }
   .productos-destacados .productos {
     width: 33%;
   }
-  /* store */
   .store {
     grid-template-columns: 50%;
     grid-template-rows: auto;
@@ -334,7 +389,10 @@ header img {
   .productos-destacados .productos {
     width: 50%;
   }
-  /* store */
+  .box-us {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
   .store {
     grid-template-columns: 75%;
     grid-template-rows: auto;

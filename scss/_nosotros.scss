@@ -1,0 +1,46 @@
+.nos-img{
+    img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+.box-us{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px 50px;
+    .card-vid1{
+        border: 3px solid $thirdColor;
+        border-radius: 10px;
+        width: 50%;
+        margin-bottom: 30px;
+        padding: 20px;
+        iframe{
+            width: 100%;
+            height: 450px;
+        }
+        p{
+            font-size: $md;
+            line-height: $lg;
+            margin-left: 32px;
+        }
+    }
+    .card-vid2{
+        border: 3px solid $thirdColor;
+        border-radius: 10px;
+        width: 50%;
+        margin-bottom: 30px;
+        padding: 20px;
+        iframe{
+            width: 100%;
+            height: 450px;
+        }
+        p{
+            font-size: $md;
+            line-height: $lg;
+            margin-left: 32px;
+        }
+    }
+}
