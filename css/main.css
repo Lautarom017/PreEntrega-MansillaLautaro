@@ -13,6 +13,12 @@ h3 {
   font-weight: 600;
 }
 
+h1 {
+  font-family: "Nunito", sans-serif;
+  margin-left: 20px;
+  font-weight: 600;
+}
+
 p {
   color: grey;
   line-height: 1.4em;
@@ -166,6 +172,9 @@ header img {
 }
 .productos-destacados img {
   width: 100%;
+}
+.productos-destacados .h1 {
+  margin-left: 10px;
 }
 .productos-destacados figure {
   border: 3px solid grey;

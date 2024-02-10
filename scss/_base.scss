@@ -34,6 +34,11 @@ h3{
     color: $secondaryColor;
     font-weight: $bold;
 }
+h1{
+    font-family: $mainFont;
+    margin-left: 20px;
+    font-weight: $bold;
+}
 p{
     color: $thirdColor;
     line-height: $lg;
