@@ -9,8 +9,8 @@
             list-style: none;
             margin-right: 15px;
             a{
-                color: $fourthColor;
                 text-decoration: none;
+                color: $fourthColor;
                 font-size: 24px;
                 background-image: linear-gradient(currentColor, currentColor);
                 background-position: 0% 100%;
@@ -19,7 +19,6 @@
                 transition: background-size .3s;
                 // hover
                 &:hover{
-                    text-decoration: underline;
                     color: $black;
                     background-size: 100% 2px;
                 }
