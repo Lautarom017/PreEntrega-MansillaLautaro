@@ -205,7 +205,6 @@ header img {
   margin-bottom: 10px;
 }
 
-/* TIENDA */
 .store {
   display: grid;
   grid-template-columns: 20% repeat(2, 1fr);
@@ -274,6 +273,10 @@ header img {
 }
 .store .prod1 img {
   width: 300px;
+  opacity: 0.5;
+}
+.store .prod1 img:hover {
+  opacity: 1;
 }
 .store .prod1 p {
   width: 50%;
@@ -288,8 +291,12 @@ header img {
   text-align: center;
 }
 .store .prod2 img {
+  opacity: 0.5;
   width: 300px;
   margin-bottom: 10px;
+}
+.store .prod2 img:hover {
+  opacity: 1;
 }
 .store .prod2 p {
   width: 50%;
@@ -303,6 +310,10 @@ header img {
 }
 .store .prod3 img {
   width: 300px;
+  opacity: 0.5;
+}
+.store .prod3 img:hover {
+  opacity: 1;
 }
 .store .prod4 {
   grid-area: prod4;
@@ -313,6 +324,10 @@ header img {
 .store .prod4 img {
   width: 300px;
   margin-bottom: 20px;
+  opacity: 0.5;
+}
+.store .prod4 img:hover {
+  opacity: 1;
 }
 .store .section {
   border-radius: 10px;
@@ -381,9 +396,13 @@ header img {
     width: 100%;
     margin-top: 20px;
     justify-content: center;
+    align-items: center;
   }
   .store .actions input {
     background-color: rgba(233, 204, 157, 0.795);
+  }
+  .store .filters {
+    display: none;
   }
   .store .prod1 {
     flex-direction: column;
@@ -391,15 +410,13 @@ header img {
   }
   .store .prod1 p {
     width: 100%;
+    text-align: center;
+    text-overflow: ellipsis;
   }
 }
 @media (width < 992px) {
   .productos-destacados .productos {
     width: 50%;
-  }
-  .box-us {
-    flex-direction: column;
-    margin-bottom: 20px;
   }
   .store {
     grid-template-columns: 75%;
@@ -434,6 +451,13 @@ header img {
   .productos-destacados .productos {
     width: 100%;
   }
+  .box-us {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
   .store {
     grid-template-columns: 100%;
     grid-template-rows: auto;
@@ -444,6 +468,7 @@ header img {
     width: 99%;
     margin-top: 20px;
     justify-content: center;
+    align-items: center;
   }
   .store .actions input {
     background-color: rgba(233, 204, 157, 0.795);
@@ -454,9 +479,11 @@ header img {
   .store .prod1 {
     flex-direction: column;
     margin-bottom: 10px;
+    text-align: center;
   }
   .store .prod1 p {
-    width: 100%;
+    width: 90%;
+    margin-left: 20px;
   }
   .footer {
     flex-direction: column;
