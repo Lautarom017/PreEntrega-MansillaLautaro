@@ -354,8 +354,8 @@ header img {
   padding: 20px;
 }
 .box-us .card-vid1 iframe {
-  width: 100%;
-  height: 450px;
+  max-width: 100%;
+  height: auto;
 }
 .box-us .card-vid1 p {
   font-size: 1em;
@@ -370,8 +370,8 @@ header img {
   padding: 20px;
 }
 .box-us .card-vid2 iframe {
-  width: 100%;
-  height: 450px;
+  max-width: 100%;
+  height: auto;
 }
 .box-us .card-vid2 p {
   font-size: 1em;
