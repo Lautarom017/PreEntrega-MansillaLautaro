@@ -5,11 +5,11 @@
     padding: $padding;
     color: $color;
 }
-@mixin flex($dire,$justy,$aling,$wrap){
+@mixin boxs($dire,$justy,$wrap){
+    padding: 10px 50px;
     display: flex;
     flex-direction: $dire;
     justify-content: $justy;
-    align-items: $aling;
     flex-wrap: $wrap;
 }
 @mixin card($width,$height){
@@ -18,12 +18,6 @@
     font-size: $md;
     width: $width;
     height: $height;
-}
-@mixin boxs($padding,$margin,$bg){
-    display: flex;
-    padding: $padding;
-    margin: $margin;
-    background-color: $mainColor;
 }
 // maps
 $paleta:(

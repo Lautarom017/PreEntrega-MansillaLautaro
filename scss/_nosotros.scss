@@ -6,11 +6,7 @@
     }
 }
 .box-us{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 10px 50px;
+    @include boxs(row, space-evenly, wrap);
     .card-vid1{
         border: 3px solid $thirdColor;
         border-radius: 10px;
@@ -43,5 +39,4 @@
             margin-left: 32px;
         }
     }
-    
 }
